@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>RoyceLark.ApiClient</PackageId>
+    <Version>8.0.0</Version>
+    <Authors>RoyceLark ApiClient Contributors</Authors>
+    <Company>RoyceLark Corporations</Company>
+    <Product>Royce.ApiClient</Product>
+    <Description>Production-grade HTTP API client with runtime proxy generation, automatic retry, CancellationToken support, file uploads, form data, response headers, and per-request timeouts. A feature-rich, extensible alternative to Refit.</Description>
+    <PackageTags>http;api-client;rest-client;refit-alternative;httpclient;api;rest;webapi;proxy;cancellation;file-upload;multipart;form-data</PackageTags>
+    <PackageProjectUrl>https://github.com/roycelark/CoreApiClient</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/roycelark/CoreApiClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright (c) 2025 RoyceLark Corporations Contributors</Copyright>
+    <PackageReleaseNotes>v8.0.0 Added comprehensive download support with progress reporting, streaming to file, range/resume downloads, and cancellation support. Enhanced file upload capabilities.</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Polly" Version="8.5.0" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Icon.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+	</ItemGroup>
+</Project>
