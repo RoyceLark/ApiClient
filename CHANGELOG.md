@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.0] - 2024-12-10
+## [1.1.0] - 2025-12-10
 
 ### ✨ Added
 - **CancellationToken Support**: All API methods now support CancellationToken for request cancellation
@@ -29,7 +29,7 @@
 - Enhanced QUICK_REFERENCE with new patterns
 - Updated version to 1.1.0
 
-## [1.0.0] - 2024-12-09
+## [1.0.0] - 2025-12-09
 
 ### Initial Release
 - Dynamic proxy-based API client generation
